@@ -1,0 +1,45 @@
+div.estimate div:hover{
+	color:purple;
+	font-size: 1.125rem;
+	transform: translate(5px,5px);
+	transition: all 0.1s ease-out;
+}
+
+.affect{
+	color: green;
+  animation: flash 1s ease 1;
+  
+	
+}
+
+/* animation */
+@-webkit-keyframes flash {
+  50% { opacity: 0;color:red; }
+}
+
+@-moz-keyframes flash {
+  50% { opacity: 0;color:red; }
+}
+
+@-ms-keyframes flash {
+  50% { opacity: 0;color:red; }
+}
+
+@-o-keyframes flash {
+  50% { opacity: 0;color:red;}
+}
+
+@keyframes flash {
+  0% 100% { opacity: 0;color:red; }
+}
+
+
+/*Timber start */
+.timebar {
+    background-color: black;
+    width: 100%;
+    height: 10px;
+}
+
+
+

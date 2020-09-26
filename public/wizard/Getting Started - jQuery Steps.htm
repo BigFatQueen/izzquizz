@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://www.jquery-steps.com/GettingStarted -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Getting Started - jQuery Steps</title>
+        
+<meta name="robots" content="index, follow">
+<meta name="author" content="Rafael Staib">
+<meta name="description" content="A powerful jQuery wizard plugin that supports accessibility and HTML5.">
+<meta name="keywords" content="jQuery, jQuery Plugin, jQuery UI Component, jQuery Wizard, jQuery Tabs, 
+    jQuery Steps, HTML5, JavaScript, Accessibility, jQuery Form Wizard, jQuery Form Validation, jQuery Step by Step">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="YjJt-mRDxR14C4j_fwdLLztW-4LUSAw7iZ5z1xBBHn4">
+<meta name="google-site-verification" content="pOf4qeAKWi4KNjWST1Zlqo8hGbUlpV8PwqYZkA52fww">
+
+<!-- Required for Open Graph -->
+<meta property="og:title" content="jQuery Steps">
+<meta property="og:description" content="A powerful jQuery wizard plugin that supports accessibility and HTML5.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://www.jquery-steps.com">
+<meta property="og:image" content="http://www.jquery-steps.com/Content/images/social.png">
+
+<!-- Required for Twitter -->
+<meta property="twitter:card" content="summary">
+<meta name="twitter:creator" content="@RafaelStaib">
+<meta property="twitter:title" content="jQuery Steps">
+<meta name="twitter:description" content="A powerful jQuery wizard plugin that supports accessibility and HTML5.">
+<meta name="twitter:image" content="http://www.jquery-steps.com/Content/images/social.png">
+
+<meta name="application-name" content="jQuery Steps">
+<meta name="msapplication-tooltip" content="jQuery Steps">
+
+<link rel="shortcut icon" href="http://www.jquery-steps.com/icon.png">
+<!--link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png"-->
+        
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="/Scripts/html5shiv?v=RE_gJ9EUPkTBKS71UlDP_lykWxpC3LqjM3UwakH-oGQ1"></script>
+
+<![endif]-->
+        
+<style>
+    @-webkit-viewport { width: device-width; }
+    @-moz-viewport { width: device-width; }
+    @-ms-viewport { width: device-width; }
+    @-o-viewport { width: device-width; }
+    @viewport { width: device-width; }
+</style>
+<link href="./Getting Started - jQuery Steps_files/css" rel="stylesheet" type="text/css">
+<link href="./Getting Started - jQuery Steps_files/Extended" rel="stylesheet">
+
+        
+    <link rel="prev" title="jQuery Steps" href="http://www.jquery-steps.com/">
+    <link rel="next" title="jQuery Steps Examples" href="http://www.jquery-steps.com/Examples">
+
+    <script src="./Getting Started - jQuery Steps_files/all.js" async="" crossorigin="anonymous"></script><script async="" src="./Getting Started - jQuery Steps_files/analytics.js"></script><script src="./Getting Started - jQuery Steps_files/cb=gapi.loaded_1" async=""></script><script src="./Getting Started - jQuery Steps_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./Getting Started - jQuery Steps_files/plusone.js" gapi_processed="true"></script><script id="facebook-jssdk" src="./Getting Started - jQuery Steps_files/all(1).js"></script><script id="twitter-wjs" src="./Getting Started - jQuery Steps_files/widgets.js"></script><script id="_carbonads_projs" type="text/javascript" src="./Getting Started - jQuery Steps_files/CKYIKK7L.json"></script><script charset="utf-8" src="./Getting Started - jQuery Steps_files/button.e24f3bcdec527b80b9c80e88b62047c3.js"></script><style type="text/css" data-fbcssmodules="css:fb.css.basecss:fb.css.dialog css:fb.css.iframewidget">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
+    <body data-spy="scroll" data-target="#lefthand" data-offset="60" style="">
+        <a name="top"></a>
+
+        <div id="topbar" class="navbar navbar-fixed-top">
+            <div class="navbar-inner container">
+                <h1>
+                    <a href="http://www.jquery-steps.com/">jQuery Steps</a>
+                </h1>
+                
+                <nav role="navigation">
+                    <ul>
+                        <li class="active"><a href="http://www.jquery-steps.com/GettingStarted">Getting Started</a></li>
+                        <li class=""><a href="http://www.jquery-steps.com/Examples">Examples</a></li>
+                        <li><a href="https://github.com/rstaib/jquery-steps/wiki">Documentation</a></li>
+                        <li><a href="http://www.jquery-bootgrid.com/">Bootgrid <span class="badge badge-important">New</span></a></li>
+                        <li><a href="https://chillicream.com/blog/2013/09/12/jquery-steps-form-wizard">Blog</a></li>
+                        <li><a href="https://github.com/rstaib/jquery-steps">GitHub</a></li>
+                        <li class=""><a href="http://www.jquery-steps.com/About">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="sitewrapper container">
+            
+    <header id="banner" role="banner">
+        <h1>Getting Started</h1>
+        <p>A quick overview to get started.</p>
+        <div id="carbonads-container">
+	<script async="" type="text/javascript" src="./Getting Started - jQuery Steps_files/carbon.js" id="_carbonads_js"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://srv.carbonads.net/ads/click/x/GTND42Q7F6YDE53MCEB4YKQMF6AIV27MCE7DVZ3JCWAIL2QICTBD52JKCABDE27ECWSD653JCTAIV2JECVYDTKQKC6BIL5QJCT7DTK3EHJNCLSIZ?segment=placement:jquerystepscom;" class="carbon-img" target="_blank" rel="noopener sponsored"><img src="./Getting Started - jQuery Steps_files/1599077289-Hotjar-carbon.png" alt="ads via Carbon" border="0" style="max-width: 130px;"></a><a href="https://srv.carbonads.net/ads/click/x/GTND42Q7F6YDE53MCEB4YKQMF6AIV27MCE7DVZ3JCWAIL2QICTBD52JKCABDE27ECWSD653JCTAIV2JECVYDTKQKC6BIL5QJCT7DTK3EHJNCLSIZ?segment=placement:jquerystepscom;" class="carbon-text" target="_blank" rel="noopener sponsored">Go beyond website analytics and understand what users are really doing</a></span><a href="http://carbonads.net/?utm_source=jquerystepscom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a></span></div>
+</div>
+    </header>
+
+            <div class="socialbar clearfix">
+    <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button" src="./Getting Started - jQuery Steps_files/tweet_button.2d7d9a6d04538bf11c7b23641e75738c.en.html" data-url="http://www.jquery-steps.com"></iframe>
+    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+    <div class="fb-like fb_iframe_widget" data-href="http://www.jquery-steps.com" data-send="false" data-layout="button_count" data-width="110" data-show-faces="false" data-font="arial" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=110&amp;font=arial&amp;href=http%3A%2F%2Fwww.jquery-steps.com%2F&amp;layout=button_count&amp;locale=en_GB&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=110"><span style="vertical-align: bottom; width: 81px; height: 20px;"><iframe name="f324cc2a4aa472c" width="110px" height="1000px" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./Getting Started - jQuery Steps_files/like.html" style="border: none; visibility: visible; width: 81px; height: 20px;" class=""></iframe></span></div>
+    <script>(function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+    <div id="___plusone_0" style="position: absolute; width: 450px; left: -10000px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position:absolute;top:-10000px;width:450px;margin:0px;border-style:none" tabindex="0" vspace="0" width="100%" id="I0_1599103266537" name="I0_1599103266537" src="./Getting Started - jQuery Steps_files/fastbutton.html" data-gapiattached="true"></iframe></div><div class="g-plusone" data-size="medium" data-href="http://www.jquery-steps.com" data-gapiscan="true" data-onload="true" data-gapistub="true"></div>
+    <script>(function () { var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true; po.src = 'https://apis.google.com/js/plusone.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s); })();</script>
+    <iframe src="./Getting Started - jQuery Steps_files/github-btn.html" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+    <iframe src="./Getting Started - jQuery Steps_files/github-btn(1).html" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+</div>
+            
+
+
+
+<div class="content">
+    <div class="row-fluid">
+        <nav id="lefthand" class="span3" role="navigation">
+            <ul id="lefthand-nav" class="nav nav-list affix">
+                <li class=""><a href="http://www.jquery-steps.com/GettingStarted#intro">Quick Introduction</a></li>
+                <li class=""><a href="http://www.jquery-steps.com/GettingStarted#download">Download</a></li>
+                <li class=""><a href="http://www.jquery-steps.com/GettingStarted#packages">Packages</a></li>
+                <li class="active"><a href="http://www.jquery-steps.com/GettingStarted#basic">Basic Example</a></li>
+                <li class=""><a href="http://www.jquery-steps.com/GettingStarted#docs">Documentation</a></li>
+            </ul>
+        </nav>
+        <div class="span9 main" role="main">
+            <section id="intro">
+                <h2 class="page-header">Quick Introduction</h2>
+                <p class="lead">jQuery Steps is a smart UI component which allows you to easily create wizard-like interfaces. 
+                    This plugin groups content into sections for a more structured and orderly page view. 
+                    Furthermore, it is as simple as 1-2-3 to add plugins such as jQuery Validation which can prevent step changing or submission. 
+                    Check out the <a href="http://www.jquery-steps.com/Examples">demos</a> and get a first-hand impression!</p>
+                <h3>Features</h3>
+                <div class="row-fluid">
+                    <dl class="span6">
+                        <dt>Accessability support</dt>
+                        <dd>Make it visible for everyone without extra work - just use it.</dd>
+                        <dt>Async content loading</dt>
+                        <dd>Load your content asynchronously via <abbr title="Asynchronous JavaScript and XML">AJAX</abbr> by calling e.g. a <abbr title="Representational State Transfer">REST</abbr> service.</dd>
+                        <dt>Cool transition effects</dt>
+                        <dd>Beautiful &amp; sleek transition effects complete the offer.</dd>
+                        <dt>Dynamic Manipulation</dt>
+                        <dd>Add or remove steps dynamically via <abbr title="Application Programming Interface">API</abbr>.</dd>
+                        <dt>Easy Navigation</dt>
+                        <dd>Navigate in various different way using the keyboard, steps or pager - it is up to you.</dd>
+                        <dt>State Persistence</dt>
+                        <dd>Enable the <code>saveState</code> option - this will save your current step position of each individual wizard *.</dd>
+                    </dl>
+                    <dl class="span6">
+                        <dt>Form validation made easy</dt>
+                        <dd>Embed a validation plugin of your choice and customize it like you want - it is just that simple.</dd>
+                        <dt>Embedded iframe content</dt>
+                        <dd>Embed your content via an <code>iframe</code> - it feels like it would be a part of your site.</dd>
+                        <dt>Keyboard navigation</dt>
+                        <dd>Use your keyboard to navigate through your content.</dd>
+                        <dt>Multiple wizards</dt>
+                        <dd>Have multiple wizards on one page or even have nested wizards like you want.</dd>
+                        <dt>Vertical Navigation</dt>
+                        <dd>Switch to vertical navigation if you need.</dd>
+                        <dt>And much more ...</dt>
+                        <dd>Take a look to the examples and learn more about it.</dd>
+                    </dl>
+                </div>
+                <p class="muted"><small>* The step position will be saved into a cookie after a step change, add or remove. 
+                    After a refresh the latest active step becomes active again.</small></p>
+                <h3>Buy me a beer</h3>
+<p>
+    Hey guys, I invested tons of time and still investing to offer you a great feeling and nice looking component.
+    So if you like it, I would very appreciate a beer donation ;-) Thanks.
+</p>
+<p>
+    </p><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="2Q69YA36ZTARW">
+        <input type="image" src="./Getting Started - jQuery Steps_files/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="./Getting Started - jQuery Steps_files/pixel.gif" width="1" height="1">
+    </form>
+<p></p>
+            </section>
+            <section id="download">
+                <h2 class="page-header">Download</h2>
+                <p class="lead">jQuery Steps is an open-source project hosted on GitHub and can be therefore downloaded in many different ways. 
+                    The easiest and fastest way to get started is to download the compiled &amp; minified version.</p>
+                <div class="row-fluid">
+                    <div class="span6">
+                        <h3>Compiled &amp; Minified</h3>
+                        <p>No documentation included; just the bare <abbr title="JavaScript">JS</abbr> files.</p>
+                        <p><a href="http://www.jquery-steps.com/Download/CompiledSources" class="btn btn-primary btn-large">Download</a></p>
+                    </div>
+                    <div class="span6">
+                        <h3>Source Code</h3>
+                        <p>Contains the original source files. By using the <code>grunt api</code> command the <abbr title="Application Programming Interface">API</abbr> 
+                            documentation will be automatically built.</p>
+                        <p><a href="http://www.jquery-steps.com/Download/SourceCode" class="btn btn-large">Download source</a></p>
+                    </div>
+                </div>
+            </section>
+            <section id="packages">
+                <h2 class="page-header">Packages</h2>
+                <p class="lead">jQuery Steps is also available on the following package managers.</p>
+                <div class="row-fluid">
+                    <div class="span6">
+                        <h3>NuGet</h3>
+                        <p>The package manager for the Microsoft development platform including <em>.Net</em>. You find the package on NuGet site <a href="https://www.nuget.org/packages/jQuery.Steps" target="_blank">here</a>. To install the package see the following command line example.</p>
+                        <pre class="prettyprint prettyprinted" style=""><span class="pln">PM</span><span class="pun">&gt;</span><span class="pln"> </span><span class="typ">Install</span><span class="pun">-</span><span class="typ">Package</span><span class="pln"> jQuery</span><span class="pun">.</span><span class="typ">Steps</span></pre>
+                    </div>
+                    <div class="span6">
+                        <h3>Bower</h3>
+                        <p>A package maneger for the web. To install the package see the following command line example.</p>
+                        <pre class="prettyprint prettyprinted" style=""><span class="pln">$ bower install jquery</span><span class="pun">.</span><span class="pln">steps</span></pre>
+                    </div>
+                </div>
+            </section>
+            <section id="basic">
+                <h2 class="page-header">Basic Example</h2>
+                <p class="lead">The simplest template to get started is the following.</p>
+                <p>Everything you need to start is:</p>
+                <ol>
+                    <li>Include <strong>jQuery</strong> and <strong>jQuery Steps</strong> in your <abbr title="Hypertext Markup Language">HTML</abbr> code.</li>
+                    <li>Then select an element represents the wizard and call the <code>steps</code> method.</li>
+                </ol>
+                <pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="dec">&lt;!DOCTYPE html&gt;</span></li><li class="L1"><span class="tag">&lt;html&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;head&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;title&gt;</span><span class="pln">Demo</span><span class="tag">&lt;/title&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"jquery.js"</span><span class="tag">&gt;&lt;/script&gt;</span><span class="pln"> </span></li><li class="L6"><span class="pln">        </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"jquery.steps.js"</span><span class="tag">&gt;&lt;/script&gt;</span></li><li class="L7"><span class="pln">    </span><span class="tag">&lt;/head&gt;</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;body&gt;</span></li><li class="L9"><span class="pln">        </span><span class="tag">&lt;script&gt;</span></li><li class="L0"><span class="pln">            $</span><span class="pun">(</span><span class="str">"#wizard"</span><span class="pun">).</span><span class="pln">steps</span><span class="pun">();</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;/script&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"wizard"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;/body&gt;</span></li><li class="L4"><span class="tag">&lt;/html&gt;</span></li></ol></pre>
+                <h3>How to add initial steps?</h3>
+                <p>There are two ways to add steps and their corresponding content.</p>
+                <p>1. Add <abbr title="Hypertext Markup Language">HTML</abbr> code into the representing wizard element.</p>
+                <pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"wizard"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;h1&gt;</span><span class="pln">First Step</span><span class="tag">&lt;/h1&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;div&gt;</span><span class="pln">First Content</span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="pln">&nbsp;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;h1&gt;</span><span class="pln">Second Step</span><span class="tag">&lt;/h1&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;div&gt;</span><span class="pln">Second Content</span><span class="tag">&lt;/div&gt;</span></li><li class="L6"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                <p>2. Or use the <abbr title="Application Programming Interface">API</abbr> to add steps dynamically.</p>
+                <pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="com">// Initialize wizard</span></li><li class="L1"><span class="kwd">var</span><span class="pln"> wizard </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="str">"#wizard"</span><span class="pun">).</span><span class="pln">steps</span><span class="pun">();</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="com">// Add step</span></li><li class="L4"><span class="pln">wizard</span><span class="pun">.</span><span class="pln">steps</span><span class="pun">(</span><span class="str">"add"</span><span class="pun">,</span><span class="pln"> </span><span class="pun">{</span></li><li class="L5"><span class="pln">    title</span><span class="pun">:</span><span class="pln"> </span><span class="str">"HTML code"</span><span class="pun">,</span><span class="pln"> </span></li><li class="L6"><span class="pln">    content</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&lt;strong&gt;HTML code&lt;/strong&gt;"</span></li><li class="L7"><span class="pun">});</span></li></ol></pre>
+            </section>
+            <section id="docs">
+                <h2 class="page-header">Documentation</h2>
+                <p class="lead">There are two ways to get the documentation but the recommended way is to use the wiki site.</p>
+                <ol>
+                    <li>Visit the project specific <a href="https://github.com/rstaib/jquery-steps/wiki" target="_blank">GitHub wiki</a> or</li>
+                    <li>download the source code and use the <code>grunt api</code> command.</li>
+                </ol>
+                <p class="alert alert-info"><strong>Info:</strong> The documentation is currently maintained via the GitHub wiki but will be moved to <a href="http://www.jquery-steps.com/">jquery-steps.com</a> later this year.</p>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+        
+        <footer id="footer" role="contentinfo">
+    <p>© Copyright 2020, <a href="http://rafaelstaib.com/">Rafael Staib</a></p>
+    <ul class="links">
+        <li><a href="http://www.jquery-steps.com/Imprint">Impressum</a></li>
+        <li class="muted">·</li>
+        <li><a href="http://www.jquery-steps.com/Privacy">Datenschutz</a></li>
+        <li class="muted">·</li>
+        <li><a href="https://github.com/rstaib/jquery-steps/issues">Issues</a></li>
+        <li class="muted">·</li>
+        <li><a href="https://github.com/rstaib/jquery-steps/releases">Releases</a></li>
+    </ul>
+</footer>
+        
+<script>
+    if (navigator.userAgent.match(/IEMobile\/10\.0/))
+    {
+        var msViewportStyle = document.createElement("style");
+        msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));
+        document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+    }
+
+    // Google Analytics
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-40997516-1', 'jquery-steps.com');
+    ga('send', 'pageview');
+</script>
+<script src="./Getting Started - jQuery Steps_files/Extended(1)"></script>
+
+        
+    <script>
+        $(function ()
+        {
+            $("#lefthand-nav").affix({
+                offset: {
+                    top: function ()
+                    {
+                        return $("#topbar").outerHeight() + $("#banner").outerHeight();
+                    }
+                }
+            });
+            
+            prettyPrint();
+        });
+    </script>
+
+    
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Getting Started - jQuery Steps_files/widget_iframe.2d7d9a6d04538bf11c7b23641e75738c.html" title="Twitter settings iframe" style="display: none;"></iframe><iframe name="oauth2relay604438483" id="oauth2relay604438483" src="./Getting Started - jQuery Steps_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div></body></html>
